@@ -19,7 +19,7 @@ Script : Trix#2794 / Julman#1234
 ---@diagnostic disable: redefined-local, undefined-global, unused-local, param-type-mismatch, redundant-value, lowercase-global, undefined-field
 
 pcall(function ()
-    local snd = 8152780685
+    local snd = 12222152
     local sound = Instance.new("Sound", Workspace)
     sound.SoundId = "rbxassetid://" .. snd
     sound.Name = "Notification"
