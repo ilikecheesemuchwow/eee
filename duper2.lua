@@ -7,4 +7,5 @@ queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/il
             v.Parent = game:GetService("Workspace")
         end
     end
+task.wait(0.1)
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
