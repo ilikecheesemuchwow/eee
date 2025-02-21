@@ -8,4 +8,9 @@ queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ilikec
             v.Parent = game:GetService("Workspace")
         end
     end
-    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+Players = game:GetService("Players")
+TeleportService = game:GetService("TeleportService")
+if #Players:GetPlayers() <= 1 then
+TeleportService:Teleport(game.PlaceId, Players.LocalPlayer)
+else
+TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, Players.LocalPlayer)
