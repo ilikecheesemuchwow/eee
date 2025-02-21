@@ -1,7 +1,6 @@
-has = getgenv().has 
 has = getgenv().has
 need = getgenv().need
-queue_on_teleport(getgenv().need = need getgenv().has = (has+1)"loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ilikecheesemuchwow/eee/refs/heads/main/duper.lua",true))()")
+queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ilikecheesemuchwow/eee/refs/heads/main/duper.lua\",true))()")
 if (has <= need) then
     game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-42, 341, -281))
     for i, v in pairs(game:GetService("Players").LocalPlayer:WaitForChild("Backpack"):GetChildren()) do
@@ -15,4 +14,3 @@ if (has <= need) then
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikecheesemuchwow/eee/refs/heads/main/bruh.txt", true))()
 end
-
