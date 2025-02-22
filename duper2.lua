@@ -8,4 +8,4 @@ for i, v in pairs(game:GetService("Players").LocalPlayer:WaitForChild("Backpack"
     end
 end
 task.wait(0.1)
-game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, Players.LocalPlayer)
+game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
