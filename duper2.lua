@@ -9,4 +9,3 @@ for i, v in pairs(game:GetService("Players").LocalPlayer:WaitForChild("Backpack"
 end
 task.wait(0.1)
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, Players.LocalPlayer)
-end
